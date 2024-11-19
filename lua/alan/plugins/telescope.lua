@@ -4,6 +4,7 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
     { "nvim-telescope/telescope-fzf-native.nvim", build="make" },
+    "nvim-telescope/telescope-file-browser.nvim",
     "nvim-tree/nvim-web-devicons",
   },
   config = function()
@@ -22,6 +23,7 @@ return {
     })
 
     telescope.load_extension("fzf")
+    telescope.load_extension("file_browser")
 
     -- set keymaps
     local keymap = vim.keymap
@@ -31,6 +33,11 @@ return {
     keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<CR>", { desc = "Find string in cwd" })
     keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>", { desc = "Find string under cursor in cwd" })
 
+    -- file browser
+    -- Press <esc> to go into normal mode and then...
+    -- c = create, r = rename, m = move, y = copy, d = delete, o = open
+    -- g = goto parent, w = goto cwd, t = change cwd, h = toggle hidden files
+    keymap.set("n", "<leader>fb", "<cmd>Telescope file_browser<CR>", { desc = "Open telescope file browser" })
   end
 }
 
