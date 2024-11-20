@@ -9,4 +9,5 @@ There were some plugins I decided not to install yet:
 - treesitter: while this looks useful I want to try using nvim without it to start with and see if I miss any of the functionality it offers
 - indent-guides: I think I will install this at some point, however vim comes with built-in support for this that might be all I need
 - autocomplete: I want to try setting up copilot for autocomplete first and then see if this is required after that
+- autopairs: I _am_ using this, but haven't included autocomplete functionality
 
