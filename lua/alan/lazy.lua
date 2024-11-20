@@ -21,5 +21,9 @@ require("lazy").setup("alan.plugins", {
   change_detection = {
     notify = false,
   },
+  checker = {
+    enabled = true,
+    notify = false,
+  },
 })
 
