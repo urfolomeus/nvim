@@ -10,4 +10,6 @@ There were some plugins I decided not to install yet:
 - indent-guides: I think I will install this at some point, however vim comes with built-in support for this that might be all I need
 - autocomplete: I want to try setting up copilot for autocomplete first and then see if this is required after that
 - autopairs: I _am_ using this, but haven't included autocomplete functionality
+- substitute: I will install this at some point, but don't want to add too much before I've been using nvim for a bit
+- surround: Same as above, I'll install this later
 
